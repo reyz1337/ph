@@ -83,6 +83,7 @@ main .services h2{
 main .services h4{
     font-weight: 800;
     font-size: 18px;
+    color: #464b4f;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
@@ -95,4 +96,36 @@ main .services ul li:not(:last-child){
 main .services p{
     font-size: 15px;
     line-height: 1.8;
+    color: #888a8b;
+}
+
+@media only screen and (min-width: 930px) {
+    .header .container {
+        padding: 80px 15px 100px;
+    }
+    .header .logo{
+        width: 167px;
+        height: 168px;
+        margin-bottom: 186px;
+    }
+    .header span{
+        font-size: 80px;
+        margin-bottom: 62px;
+    }
+    main .services ul li{
+        max-width: 1200px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main .services ul{
+        display: flex;
+        justify-content: space-between;
+        max-width: 950px;
+        margin: 0 auto;
+    }
+    main .services ul li{
+        max-width: 230px;
+    }
+
 }
